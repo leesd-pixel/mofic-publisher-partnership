@@ -3,6 +3,7 @@
     "home": "홈",
     "benefits": "혜택",
     "about": "모픽 소개",
+    "company": "회사정보",
     "apply": "입점 신청",
     "contact": "문의하기"
   },
@@ -144,6 +145,32 @@
     "a5": "MG(Minimum Guarantee)는 최소 보장 금액입니다. 100종 이상은 월 10만엔, 1,000종 이상은 월 20만엔의 MG를 보장합니다.",
     "q6": "무료 프로모션 분량도 정산되나요?",
     "a6": "네, MOFIC이 독자에게 제공하는 무료 크레딧 분량도 기존 단품 구매와 동일 조건으로 출판사에 100% 정산합니다."
+  },
+  "companyInfo": {
+    "title": "회사정보",
+    "subtitle": "한국법인 정보",
+    "company": {
+      "label": "회사명",
+      "value": "주식회사 쿼터풀 (모회사) / 주식회사 QuarterFull Japan (일본법인)"
+    },
+    "representative": {
+      "label": "대표자",
+      "value": "박종윤"
+    },
+    "address": {
+      "label": "주소",
+      "value": "서울특별시 강남구 테헤란로 311, 아남타워 6층"
+    },
+    "business": {
+      "title": "사업 내용",
+      "services": "소설·만화 콘텐츠 플랫폼 'MOFIC' 운영",
+      "partners": "국내외 출판사와의 콘텐츠 파트너십"
+    },
+    "contact": {
+      "title": "연락처",
+      "email": "partner@mofic.com",
+      "phone": ""
+    }
   },
   "footer": {
     "company": "MOFIC",

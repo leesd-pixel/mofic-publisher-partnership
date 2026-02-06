@@ -3,6 +3,7 @@
     "home": "Home",
     "benefits": "Benefits",
     "about": "About MOFIC",
+    "company": "Company",
     "apply": "Apply Now",
     "contact": "Contact"
   },
@@ -144,6 +145,44 @@
     "a5": "MG (Minimum Guarantee) is the minimum guaranteed amount. We guarantee ¥100,000/month for 100+ titles and ¥200,000/month for 1,000+ titles.",
     "q6": "Are free promotion credits also settled?",
     "a6": "Yes, free credits provided to readers by MOFIC are also 100% settled with publishers under the same terms as regular purchases."
+  },
+  "companyInfo": {
+    "title": "Company Information",
+    "subtitle": "Japan Corporation",
+    "company": {
+      "label": "Company Name",
+      "value": "QuarterFull Japan Inc."
+    },
+    "established": {
+      "label": "Established",
+      "value": "May 2024"
+    },
+    "corporateNumber": {
+      "label": "Corporate Number",
+      "value": "0104-01-156612"
+    },
+    "representative": {
+      "label": "Representative",
+      "value": "Jong Yoon Park"
+    },
+    "address": {
+      "label": "Address",
+      "value": "3F, WAW Akasaka Dai-35 Kowa Bldg, 1-14-14 Akasaka, Minato-ku, Tokyo"
+    },
+    "capital": {
+      "label": "Capital",
+      "value": "5,000,000 JPY"
+    },
+    "business": {
+      "title": "Business",
+      "services": "Operation of novel & comic content platform 'MOFIC'",
+      "partners": "Content partnerships with domestic and international publishers"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "partner@mofic.com",
+      "phone": ""
+    }
   },
   "footer": {
     "company": "MOFIC",

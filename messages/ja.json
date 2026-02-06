@@ -3,6 +3,7 @@
     "home": "ホーム",
     "benefits": "メリット",
     "about": "MOFICについて",
+    "company": "会社情報",
     "apply": "入店申請",
     "contact": "お問い合わせ"
   },
@@ -144,6 +145,44 @@
     "a5": "MG（Minimum Guarantee）は最低保証金額です。100作品以上で月10万円、1,000作品以上で月20万円のMGを保証します。",
     "q6": "無料プロモーション分も精算されますか？",
     "a6": "はい、MOFICが読者に提供する無料クレジット分も、従来の単品購入と同一条件で出版社に100%精算します。"
+  },
+  "companyInfo": {
+    "title": "会社情報",
+    "subtitle": "日本法人情報",
+    "company": {
+      "label": "会社名",
+      "value": "株式会社QuarterFull Japan"
+    },
+    "established": {
+      "label": "設立日",
+      "value": "2024年5月"
+    },
+    "corporateNumber": {
+      "label": "法人番号",
+      "value": "0104-01-156612"
+    },
+    "representative": {
+      "label": "代表者",
+      "value": "朴 鍾潤"
+    },
+    "address": {
+      "label": "所在地",
+      "value": "東京都港区赤坂1-14-14 WAW赤坂第35興和ビル3階"
+    },
+    "capital": {
+      "label": "資本金",
+      "value": "500万円"
+    },
+    "business": {
+      "title": "事業内容",
+      "services": "小説・漫画コンテンツプラットフォーム「MOFIC」の運営",
+      "partners": "国内外の出版社とのコンテンツパートナーシップ"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "email": "partner@mofic.com",
+      "phone": ""
+    }
   },
   "footer": {
     "company": "MOFIC",

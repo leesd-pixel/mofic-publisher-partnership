@@ -6,6 +6,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import About from '@/components/About';
+import CompanyInfo from '@/components/CompanyInfo';
 import FAQ from '@/components/FAQ';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
@@ -27,6 +28,7 @@ export default async function Home({
       <Pricing />
       <Testimonials />
       <About />
+      <CompanyInfo />
       <FAQ />
       <ContactForm />
       <Footer />
