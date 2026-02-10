@@ -39,9 +39,9 @@ export default function Benefits() {
   const t = useTranslations('benefits');
 
   const benefits = [
+    { key: 'discovery', icon: benefitIcons.discovery },
     { key: 'revenue', icon: benefitIcons.revenue },
     { key: 'promotion', icon: benefitIcons.promotion },
-    { key: 'discovery', icon: benefitIcons.discovery },
     { key: 'global', icon: benefitIcons.global },
     { key: 'guarantee', icon: benefitIcons.guarantee },
     { key: 'support', icon: benefitIcons.support },

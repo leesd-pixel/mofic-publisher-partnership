@@ -73,7 +73,7 @@ export default function Footer() {
             </ul>
             <div className="mt-6">
               <h4 className="font-semibold mb-2">{t('contact')}</h4>
-              <a href="mailto:partner@mofic.com" className="text-violet-400 hover:text-violet-300 transition-colors">
+              <a href={`mailto:${t('email')}`} className="text-violet-400 hover:text-violet-300 transition-colors">
                 {t('email')}
               </a>
             </div>

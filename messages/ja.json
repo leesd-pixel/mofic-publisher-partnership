@@ -8,8 +8,8 @@
     "contact": "お問い合わせ"
   },
   "hero": {
-    "title": "出版社のための新しい機会",
-    "subtitle": "MOFICと一緒なら、旧作も輝きます",
+    "title": "収益10倍実現！",
+    "subtitle": "月30万円作品が月300万円に",
     "description": "読者に発見されていない作品に新しい命を吹き込み、安定した収益を創出しましょう。",
     "cta": "入店申請する",
     "learnMore": "詳しく見る"
@@ -22,30 +22,30 @@
   },
   "benefits": {
     "title": "MOFICを選ぶ理由",
-    "subtitle": "出版社のための特別なメリット",
+    "subtitle": "既存作品の可能性を拡張するプラットフォーム",
+    "discovery": {
+      "title": "自分の好みに合う作品がつぎつぎと！！",
+      "description": "人気作に偏らないレコメンドシステムで、すべての作品が読者に発見される機会を得られます。"
+    },
     "revenue": {
       "title": "既刊売上アップ",
-      "description": "10倍以上の既刊売上増加実績。ベストセラーだけに頼らない、バランスの取れた収益構造を体験してください。"
+      "description": "埋もれていた旧作が読者に発見されることで、旧作から安定的な売上が発生！10倍以上の旧作売上増加実績多数！！"
     },
     "promotion": {
       "title": "強力なプロモーション",
-      "description": "小説150話分、漫画単行本1巻分を毎月MOFIC負担で提供。無料で提供された分量も出版社に100%精算します。"
-    },
-    "discovery": {
-      "title": "公平な作品露出",
-      "description": "人気作に偏らないレコメンドシステムで、すべての作品が読者に発見される機会を得られます。"
+      "description": "無料で閲覧された分量も！小説150話分、漫画単行本1巻分を毎月MOFIC負担で提供。無料で提供された分量も出版社に100%精算します。"
     },
     "global": {
       "title": "日本展開完了",
-      "description": "株式会社QuarterFull Japan設立。韓国を超えて日本、そして世界へ。"
+      "description": "2025年クォーターフル・ジャパン設立、MOFIC JAPAN アプリ・Webサービスローンチ。韓国、日本を超えて世界へ。"
     },
     "guarantee": {
       "title": "リスク最小化",
-      "description": "1か月前通知でいつでも終了可能なMG。100作品以上登録で毎月安定した前払いを保証します。"
+      "description": "1か月前通知でいつでも終了可能なMG提供型契約をご提供。"
     },
     "support": {
-      "title": "登録作業の専任サポート",
-      "description": "登録作業はすべてMOFICが担当。出版社は良い作品作りに集中してください。"
+      "title": "付帯作業の専任サポート！",
+      "description": "作品ファイルとメタ情報だけいただければ、残りはMOFICですべて対応いたします！売上管理についてもご意向に合わせて柔軟に対応しております！"
     }
   },
   "how": {
@@ -58,10 +58,6 @@
     "step2": {
       "title": "MOFIC負担のクレジット提供",
       "description": "読者に毎月、小説150話分・漫画単行本1巻分を無料提供。無料分も出版社に100%精算"
-    },
-    "step3": {
-      "title": "YouTube型コンテンツ体験",
-      "description": "気軽に楽しんで発掘する体験で滞在時間・再訪率を最大化"
     }
   },
   "testimonials": {
@@ -86,11 +82,11 @@
       "condition": "1,000作品以上",
       "description": "月20万円以上のMGとカスタマイズされたプロモーション企画をご提供します。"
     },
-    "pilotNote": "※10作品以上からパイロット契約で試験的にスタートすることも可能です。",
-    "note": "登録作業はすべてMOFICが担当します。"
+    "pilotNote": "※10作品からパイロット契約で試験的にスタート可能。100作品以下については協議を通じて決定。",
+    "note": ""
   },
   "about": {
-    "title": "MOFICについて",
+    "title": "MOFICのビジョン",
     "tagline": "持続可能な創作環境を支援するプラットフォーム",
     "description1": "私たちは物語を愛し、物語と共に歩んできた人々が集まったチームです。",
     "description2": "MOFICは出版業界の持続可能な創作環境をサポートするために生まれたプラットフォームです。",
@@ -99,7 +95,7 @@
       "title": "沿革",
       "item1": "韓国ベータサービス開始",
       "item2": "正式ローンチ、主要プラットフォームとパートナーシップ締結（Kakao, Naver, RIDI, Munpia, ONE store）",
-      "item3": "日本法人「株式会社QuarterFull Japan」設立およびサービスローンチ"
+      "item3": "日本法人「株式会社クォーターフル・ジャパン」設立およびサービスローンチ"
     }
   },
   "contact": {
@@ -151,23 +147,23 @@
     "subtitle": "日本法人情報",
     "company": {
       "label": "会社名",
-      "value": "株式会社QuarterFull Japan"
+      "value": "株式会社クォーターフル・ジャパン"
     },
     "established": {
       "label": "設立日",
-      "value": "2024年5月"
+      "value": "2025年11月"
     },
     "corporateNumber": {
       "label": "法人番号",
-      "value": "0104-01-156612"
+      "value": "0100-01-260646"
     },
     "capital": {
       "label": "資本金",
-      "value": "500万円"
+      "value": "100万円"
     },
     "contact": {
       "title": "お問い合わせ",
-      "email": "partner@mofic.com"
+      "email": "Japan@toodat.com"
     }
   },
   "footer": {
@@ -178,7 +174,7 @@
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "contact": "お問い合わせ",
-    "email": "partner@mofic.com",
+    "email": "Japan@toodat.com",
     "copyright": "© 2024 MOFIC. All rights reserved."
   },
   "cta": {
