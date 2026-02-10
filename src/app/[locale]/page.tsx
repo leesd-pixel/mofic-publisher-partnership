@@ -3,6 +3,8 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Benefits from '@/components/Benefits';
 import HowItWorks from '@/components/HowItWorks';
+import KoreaTrackRecord from '@/components/KoreaTrackRecord';
+import JapanExpansion from '@/components/JapanExpansion';
 import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import About from '@/components/About';
@@ -25,6 +27,8 @@ export default async function Home({
       <Hero />
       <Benefits />
       <HowItWorks />
+      <KoreaTrackRecord />
+      <JapanExpansion />
       <Pricing />
       <Testimonials />
       <About />
