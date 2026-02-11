@@ -11,7 +11,7 @@ export default function About() {
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">{t('title')}</h2>
         </div>
-        <div className="bg-gradient-to-br from-violet-50 to-indigo-50 rounded-2xl p-8 border border-violet-100">
+        <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-8 border border-teal-100">
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">{t('description1')}</p>
           <p className="text-lg text-gray-700 leading-relaxed">{t('description2')}</p>
         </div>

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const languages = [
   { code: 'ko', name: '한국어', flag: '🇰🇷' },
@@ -38,9 +39,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href={`/${currentLocale}`} className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
+            <Image
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/mofic-app-icon.svg`}
+              alt="MOFIC"
+              width={32}
+              height={32}
+              className="rounded-lg"
+            />
             <span className="font-bold text-xl text-gray-900">MOFIC</span>
           </Link>
 
@@ -50,7 +55,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-600 hover:text-violet-600 transition-colors font-medium"
+                className="text-gray-600 hover:text-teal-600 transition-colors font-medium"
               >
                 {link.label}
               </a>
@@ -78,7 +83,7 @@ export default function Header() {
                       href={switchLocale(lang.code)}
                       onClick={() => setIsLangOpen(false)}
                       className={`flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 ${
-                        currentLocale === lang.code ? 'bg-violet-50 text-violet-600' : 'text-gray-700'
+                        currentLocale === lang.code ? 'bg-teal-50 text-teal-600' : 'text-gray-700'
                       }`}
                     >
                       <span>{lang.flag}</span>
@@ -92,7 +97,7 @@ export default function Header() {
             {/* CTA Button */}
             <a
               href="#contact"
-              className="hidden sm:inline-flex items-center px-4 py-2 bg-violet-600 text-white rounded-lg font-medium hover:bg-violet-700 transition-colors"
+              className="hidden sm:inline-flex items-center px-4 py-2 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors"
             >
               {t('apply')}
             </a>
@@ -121,7 +126,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-2 text-gray-600 hover:text-violet-600"
+                className="block py-2 text-gray-600 hover:text-teal-600"
               >
                 {link.label}
               </a>

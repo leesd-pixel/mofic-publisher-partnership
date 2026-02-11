@@ -66,7 +66,7 @@ export default function ContactForm() {
               <p className="text-lg text-gray-700">{t('form.success')}</p>
               <button
                 onClick={() => setIsSubmitted(false)}
-                className="mt-6 text-violet-600 hover:text-violet-700 font-medium"
+                className="mt-6 text-teal-600 hover:text-teal-700 font-medium"
               >
                 &larr; Back to form
               </button>
@@ -85,7 +85,7 @@ export default function ContactForm() {
                     value={formData.company}
                     onChange={handleChange}
                     placeholder={t('form.companyPlaceholder')}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all"
                   />
                 </div>
                 <div>
@@ -99,7 +99,7 @@ export default function ContactForm() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder={t('form.namePlaceholder')}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function ContactForm() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder={t('form.emailPlaceholder')}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all"
                   />
                 </div>
                 <div>
@@ -129,7 +129,7 @@ export default function ContactForm() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder={t('form.phonePlaceholder')}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function ContactForm() {
                     value={formData.works}
                     onChange={handleChange}
                     placeholder={t('form.worksPlaceholder')}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all"
                   />
                 </div>
                 <div>
@@ -158,7 +158,7 @@ export default function ContactForm() {
                     required
                     value={formData.genre}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all bg-white"
                   >
                     <option value="">Select...</option>
                     <option value="novel">{t('form.genreOptions.novel')}</option>
@@ -179,7 +179,7 @@ export default function ContactForm() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder={t('form.messagePlaceholder')}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-100 outline-none transition-all resize-none"
                 />
               </div>
 
@@ -187,7 +187,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 px-8 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-xl font-semibold text-lg hover:from-violet-700 hover:to-indigo-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 px-8 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-xl font-semibold text-lg hover:from-teal-600 hover:to-cyan-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? t('form.submitting') : t('form.submit')}
                 </button>

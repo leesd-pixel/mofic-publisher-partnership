@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/mofic-publisher-partnership',
+  },
 };
 
 export default withNextIntl(nextConfig);

@@ -37,8 +37,8 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Highlight banner - 계약 종료 조건 강조 */}
-        <div className="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-2xl p-6 mb-12 max-w-3xl mx-auto">
+        {/* Highlight banner */}
+        <div className="bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl p-6 mb-12 max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-4">
             <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@ export default function Pricing() {
             </div>
             <div className="text-white text-center sm:text-left">
               <p className="text-lg sm:text-xl font-bold">{t('highlight')}</p>
-              <p className="text-violet-200 text-sm sm:text-base">{t('highlightSub')}</p>
+              <p className="text-teal-100 text-sm sm:text-base">{t('highlightSub')}</p>
             </div>
           </div>
         </div>
@@ -57,15 +57,15 @@ export default function Pricing() {
           {contractTypes.map((type) => (
             <div
               key={type.key}
-              className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-violet-300 hover:shadow-lg transition-all"
+              className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-teal-300 hover:shadow-lg transition-all"
             >
               {/* Icon and condition */}
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 bg-violet-100 rounded-xl flex items-center justify-center text-violet-600">
+                <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center text-teal-600">
                   {type.icon}
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-violet-600">
+                  <p className="text-xl font-bold text-teal-600">
                     {t(`${type.key}.condition`)}
                   </p>
                 </div>

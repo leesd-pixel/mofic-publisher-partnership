@@ -50,18 +50,18 @@ export default function Benefits() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefitKeys.map((key) => (
-            <div key={key} className="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-100/50 transition-all duration-300">
+            <div key={key} className="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-teal-200 hover:shadow-xl hover:shadow-teal-100/50 transition-all duration-300">
               <div className="flex items-center gap-4 mb-5">
-                <div className="w-14 h-14 bg-gradient-to-br from-violet-100 to-indigo-100 rounded-xl flex items-center justify-center text-violet-600 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-xl flex items-center justify-center text-teal-600 group-hover:scale-110 transition-transform">
                   {benefitIcons[key]}
                 </div>
-                <span className="px-3 py-1 bg-violet-50 text-violet-600 text-xs font-semibold rounded-full">
+                <span className="px-3 py-1 bg-teal-50 text-teal-600 text-xs font-semibold rounded-full">
                   {t(`${key}.tag`)}
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">{t(`${key}.title`)}</h3>
               <p className="text-gray-600 leading-relaxed mb-2">{t(`${key}.description`)}</p>
-              {t.has(`${key}.sub`) && <p className="text-violet-600 text-sm font-medium">{t(`${key}.sub`)}</p>}
+              {t.has(`${key}.sub`) && <p className="text-teal-600 text-sm font-medium">{t(`${key}.sub`)}</p>}
               {t.has(`${key}.note`) && <p className="text-gray-400 text-xs mt-2">{t(`${key}.note`)}</p>}
             </div>
           ))}

@@ -6,8 +6,6 @@ export default function CompanyInfo() {
   const t = useTranslations('companyInfo');
   const locale = useLocale();
 
-  // 일본어/영어: 일본법인 정보 (설립일, 법인번호, 자본금 포함)
-  // 한국어: 한국법인 정보 (설립일, 법인번호, 자본금 제외)
   const showJapanDetails = locale !== 'ko';
 
   return (
@@ -56,10 +54,10 @@ export default function CompanyInfo() {
           <div>
             <h3 className="text-lg font-bold text-gray-900 mb-4">{t('contact.title')}</h3>
             <div className="flex items-center gap-2 text-gray-600">
-              <svg className="w-5 h-5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <a href={`mailto:${t('contact.email')}`} className="text-violet-600 hover:underline">
+              <a href={`mailto:${t('contact.email')}`} className="text-teal-600 hover:underline">
                 {t('contact.email')}
               </a>
             </div>

@@ -6,8 +6,8 @@ export default function HowItWorks() {
   const t = useTranslations('how');
 
   const engines = [
-    { key: 'step1', number: '01', color: 'violet' },
-    { key: 'step2', number: '02', color: 'indigo' },
+    { key: 'step1', number: '01', color: 'teal' },
+    { key: 'step2', number: '02', color: 'cyan' },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function HowItWorks() {
           {engines.map((engine) => (
             <div key={engine.key} className="relative">
               <div className="bg-white rounded-2xl p-8 shadow-lg shadow-gray-100 border border-gray-100 hover:shadow-xl transition-shadow">
-                <div className="absolute -top-4 left-8 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-bold px-4 py-1 rounded-full">
+                <div className="absolute -top-4 left-8 bg-gradient-to-r from-teal-500 to-cyan-500 text-white text-sm font-bold px-4 py-1 rounded-full">
                   {engine.number}
                 </div>
 
@@ -34,8 +34,8 @@ export default function HowItWorks() {
                     <div key={i} className="flex items-start gap-3">
                       <div className="flex-shrink-0 mt-1">
                         {i < 4 ? (
-                          <div className="w-6 h-6 rounded-full bg-violet-100 flex items-center justify-center">
-                            <svg className="w-3 h-3 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center">
+                            <svg className="w-3 h-3 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7" />
                             </svg>
                           </div>
