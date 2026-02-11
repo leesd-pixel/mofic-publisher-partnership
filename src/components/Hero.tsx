@@ -59,6 +59,14 @@ export default function Hero() {
                 <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0" />
                 {t('platformJapan')}
               </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0" />
+                {t('platformAmerica')}
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full flex-shrink-0" />
+                {t('platformTaiwan')}
+              </div>
             </div>
           </div>
         </div>

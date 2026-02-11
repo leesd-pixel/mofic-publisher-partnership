@@ -16,7 +16,9 @@
     "learnMore": "詳細を見る",
     "platformTitle": "グローバル電子書籍プラットフォーム MOFIC",
     "platformKorea": "MOFIC Korea：2年以上の安定運用、DAU 1.5万人",
-    "platformJapan": "MOFIC Japan：2025年にアプリ／Webのサービス開始、配信作品 4,000+"
+    "platformJapan": "MOFIC Japan：2025年、アプリ／Webのサービス開始、配信作品 4,000+",
+    "platformAmerica": "MOFIC America：2025年、テストオープン完了",
+    "platformTaiwan": "MOFIC Taiwan：2026年上半期、テストオープン予定"
   },
   "stats": {
     "stat1": { "value": "2年+", "label": "安定運用" },
