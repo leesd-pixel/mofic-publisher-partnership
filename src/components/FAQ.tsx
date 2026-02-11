@@ -7,7 +7,7 @@ export default function FAQ() {
   const t = useTranslations('faq');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
+  const allFaqs = [
     { q: 'q1', a: 'a1' },
     { q: 'q2', a: 'a2' },
     { q: 'q3', a: 'a3' },
@@ -15,6 +15,7 @@ export default function FAQ() {
     { q: 'q5', a: 'a5' },
     { q: 'q6', a: 'a6' },
   ];
+  const faqs = allFaqs.filter((faq) => t.has(faq.q));
 
   return (
     <section className="py-24 bg-gray-50">

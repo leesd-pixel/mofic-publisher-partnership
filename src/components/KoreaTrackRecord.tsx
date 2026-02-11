@@ -5,7 +5,8 @@ import { useTranslations } from 'next-intl';
 export default function KoreaTrackRecord() {
   const t = useTranslations('koreaTrack');
 
-  const items = ['item1', 'item2', 'item3', 'item4', 'item5'];
+  const allItems = ['item1', 'item2', 'item3', 'item4', 'item5'];
+  const items = allItems.filter((item) => t.has(item));
 
   return (
     <section className="py-24 bg-gradient-to-b from-white to-violet-50">
