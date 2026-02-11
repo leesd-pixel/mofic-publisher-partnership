@@ -1,0 +1,10 @@
+[
+  {
+    "regexp": "^\\/mofic-publisher-partnership(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\\\.json))?[\\/#\\?]?$",
+    "originalSource": "/"
+  },
+  {
+    "regexp": "^\\/mofic-publisher-partnership(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(ko|en|ja))(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+    "originalSource": "/(ko|en|ja)/:path*"
+  }
+]
