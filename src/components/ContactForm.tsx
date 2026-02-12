@@ -32,7 +32,7 @@ export default function ContactForm() {
         genre: formData.genre,
         message: formData.message,
       });
-      fetch(`https://script.google.com/macros/s/AKfycbwr0TOHeJkBTkdtBMDgBlP1dA0Sgio8ACoaAJpDRq6kpn4_ZDM9-lramWwzsD7LMoKP/exec?${params.toString()}`, {
+      fetch(`https://script.google.com/macros/s/AKfycbxksqfpo4REiH-fxks9Vet4y4EUJsDY9upnVsQCSbO8KfOMnRzWzN1Z-xkUK82444ZKCg/exec?${params.toString()}`, {
         method: 'GET',
         mode: 'no-cors',
       });
