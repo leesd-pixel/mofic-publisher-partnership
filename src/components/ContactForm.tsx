@@ -46,7 +46,7 @@ export default function ContactForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          access_key: 'ed04fa08-2ce7-4d1f-be2d-178f3dabccdb',
+          access_key: '47dad5f9-afb7-401a-9a6c-981f8e57066f',
           subject: `[MOFIC Partner] New application from ${formData.company}`,
           from_name: 'MOFIC Publisher Partnership',
           company: formData.company,
