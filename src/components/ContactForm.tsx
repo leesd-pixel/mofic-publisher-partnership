@@ -21,20 +21,45 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'ed04fa08-2ce7-4d1f-be2d-178f3dabccdb',
+          subject: `[MOFIC Partner] New application from ${formData.company}`,
+          from_name: 'MOFIC Publisher Partnership',
+          to: 'japan@toodat.com',
+          company: formData.company,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          works: formData.works,
+          genre: formData.genre,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({
+          company: '',
+          name: '',
+          email: '',
+          phone: '',
+          works: '',
+          genre: '',
+          message: '',
+        });
+      } else {
+        alert('送信に失敗しました。もう一度お試しください。');
+      }
+    } catch {
+      alert('ネットワークエラーが発生しました。もう一度お試しください。');
+    }
 
     setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({
-      company: '',
-      name: '',
-      email: '',
-      phone: '',
-      works: '',
-      genre: '',
-      message: '',
-    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
