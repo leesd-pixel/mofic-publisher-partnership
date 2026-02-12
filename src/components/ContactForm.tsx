@@ -11,7 +11,7 @@ const CONFIG = {
   },
   default: {
     accessKey: 'f1e6c3a2-fc1b-43ec-ba96-fc76a845a317',
-    sheetsUrl: 'https://script.google.com/macros/s/AKfycbyEQ4JEanNL7x6e0x2Iw3fqKjp44YUR97wvNTwV6KirQVFiYlEHmwz9UC0g3LFjjYjA3w/exec',
+    sheetsUrl: 'https://script.google.com/macros/s/AKfycbxUVKs0T5qg_akOD7k3cLPIAjZRvgg3AgVRv3B_J1M5rgZfbhgmcZ6cgMRdyC21P5cwRQ/exec',
   },
 } as const;
 
