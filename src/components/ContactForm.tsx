@@ -1,10 +1,24 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useState } from 'react';
+
+// Locale-based configuration
+const CONFIG = {
+  ja: {
+    accessKey: '47dad5f9-afb7-401a-9a6c-981f8e57066f',
+    sheetsUrl: 'https://script.google.com/macros/s/AKfycbxksqfpo4REiH-fxks9Vet4y4EUJsDY9upnVsQCSbO8KfOMnRzWzN1Z-xkUK82444ZKCg/exec',
+  },
+  default: {
+    accessKey: 'f1e6c3a2-fc1b-43ec-ba96-fc76a845a317',
+    sheetsUrl: 'https://script.google.com/macros/s/AKfycbyEQ4JEanNL7x6e0x2Iw3fqKjp44YUR97wvNTwV6KirQVFiYlEHmwz9UC0g3LFjjYjA3w/exec',
+  },
+} as const;
 
 export default function ContactForm() {
   const t = useTranslations('contact');
+  const locale = useLocale();
+  const config = locale === 'ja' ? CONFIG.ja : CONFIG.default;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -32,7 +46,7 @@ export default function ContactForm() {
         genre: formData.genre,
         message: formData.message,
       });
-      fetch(`https://script.google.com/macros/s/AKfycbxksqfpo4REiH-fxks9Vet4y4EUJsDY9upnVsQCSbO8KfOMnRzWzN1Z-xkUK82444ZKCg/exec?${params.toString()}`, {
+      fetch(`${config.sheetsUrl}?${params.toString()}`, {
         method: 'GET',
         mode: 'no-cors',
       });
@@ -46,7 +60,7 @@ export default function ContactForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          access_key: '47dad5f9-afb7-401a-9a6c-981f8e57066f',
+          access_key: config.accessKey,
           subject: `[MOFIC Partner] New application from ${formData.company}`,
           from_name: 'MOFIC Publisher Partnership',
           company: formData.company,
