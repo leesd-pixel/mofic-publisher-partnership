@@ -21,43 +21,45 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Save to Google Sheets via GET (fire-and-forget, don't block email)
     try {
-      // Send email via Web3Forms + save to Google Sheets simultaneously
-      const [emailResponse] = await Promise.all([
-        fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            access_key: 'ed04fa08-2ce7-4d1f-be2d-178f3dabccdb',
-            subject: `[MOFIC Partner] New application from ${formData.company}`,
-            from_name: 'MOFIC Publisher Partnership',
-            to: 'japan@toodat.com',
-            company: formData.company,
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            works: formData.works,
-            genre: formData.genre,
-            message: formData.message,
-          }),
-        }),
-        fetch('https://script.google.com/macros/s/AKfycbyjqmixI2RYrDS3dARBLcFsZl8Wq9E8AOMYU0kaQRThOVp2IMKVAcqo9NYkHbospL2H/exec', {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            company: formData.company,
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            works: formData.works,
-            genre: formData.genre,
-            message: formData.message,
-          }),
-        }),
-      ]);
+      const params = new URLSearchParams({
+        company: formData.company,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        works: formData.works,
+        genre: formData.genre,
+        message: formData.message,
+      });
+      fetch(`https://script.google.com/macros/s/AKfycbwr0TOHeJkBTkdtBMDgBlP1dA0Sgio8ACoaAJpDRq6kpn4_ZDM9-lramWwzsD7LMoKP/exec?${params.toString()}`, {
+        method: 'GET',
+        mode: 'no-cors',
+      });
+    } catch {
+      // Sheets failure should not block email
+    }
 
-      const result = await emailResponse.json();
+    // Send email via Web3Forms
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: 'ed04fa08-2ce7-4d1f-be2d-178f3dabccdb',
+          subject: `[MOFIC Partner] New application from ${formData.company}`,
+          from_name: 'MOFIC Publisher Partnership',
+          company: formData.company,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          works: formData.works,
+          genre: formData.genre,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
       if (result.success) {
         setIsSubmitted(true);
         setFormData({
